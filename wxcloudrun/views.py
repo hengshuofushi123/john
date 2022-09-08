@@ -57,10 +57,6 @@ def count():
         return make_err_response('action参数错误')
 
 
-@app.route('/api/count', methods=['GET'])
+@app.route('/api/test', methods=['GET'])
 def get_count():
-    """
-    :return: 计数的值
-    """
-    counter = Counters.query.filter(Counters.id == 1).first()
-    return make_succ_response(0) if counter is None else make_succ_response(counter.count)
+    return {'msg':'999'}
