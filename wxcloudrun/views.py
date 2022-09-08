@@ -58,5 +58,5 @@ def count():
 
 
 @app.route('/api/test', methods=['GET'])
-def get_count():
+def get_test():
     return {'msg':'999'}
